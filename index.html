@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio</title>
-    <link rel="stylesheet" href="stlye.css">
+    <link rel="stylesheet" href="./style/stlye.css">
 </head>
 <body>
-    <header></header>
+    <header class="cabecalho">
+        <nav class="cabecalho-nav">
+            <a class="cabecalho-link" href="index.html">Home</a>
+            <a class="cabecalho-link" href="sobreMim.html">Sobre mim</a>
+        </nav>
+    </header>
     <main class="menu">
         <section class = "menuTexto">
             <h1 class="menuTextoTitulo"> Eleve seu negócio digital a outro nível <strong class="tituloDestaque"> um Front-end de qualidade!</strong></h1>
@@ -16,12 +21,22 @@
             </p>
       
             <div class="menuBotoes">
-                <a class="estiloBotoes">Instagram</a>
-                <a class="estiloBotoes">GitHub</a>
+                <h2 class="botaoSubtitulo">Acesse minhas redes: </h2>
+                <a class="estiloBotoes">
+                    <img src="./assets/instagram.png">
+                    Instagram</a>
+                <a class="estiloBotoes">
+                    <img src="./assets/github.png">
+                    GitHub</a>
+                <a class="estiloBotoes">
+                    <img src="./assets/linkedin.png">
+                    Linkedin</a>
             </div>
         </section>
-        <img class="imagemMenu" src="FullSizeRender 2.JPG">
+        <img class="imagemMenu" src="./assets/FullSizeRender 2.JPG">
     </main>
-    <footer></footer>
+    <footer>
+        <p class="rodape">Desenvolvido por WINDSON PATRICIO</p>
+    </footer>
 </body>
 </html>

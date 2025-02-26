@@ -6,10 +6,27 @@
 }
 
 body {
-    height: 100vh;
     box-sizing: border-box;
     background-color: black;
     color: #f6f6f6;
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho-nav{
+    display: flex;
+    gap: 80px;
+
+}
+
+.cabecalho-link{
+    font-family: "Montserrat", serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #22d4fd;
+    text-decoration: none;
 }
 
 .tituloDestaque {
@@ -17,7 +34,7 @@ body {
 }
 
 .menu{
-    margin: 15% 15%;
+    padding: 5% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -44,20 +61,38 @@ body {
 
 .menuBotoes{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
+    gap:32px;
+}
+
+.botaoSubtitulo{
+    font-family: "Krona one", serif;
+    font-weight: 400px;
+    font-size: 24px;
+    
 }
 
 .estiloBotoes{
-    background-color: #22d4fd ;
-    width: 280px;
+    /* background-color: #22d4fd ; */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid #22d4fd;
+    width: 378px;
     text-align: center;
-    border-radius: 16px;
+    border-radius: 8px;
     font-size: 24px;
     padding: 21.5px 0;
     text-decoration: none;
-    color:black;
+    color:#f6f6f6;
     font-family: "Montserrat", serif;
     font-style: italic;
+}
+
+.estiloBotoes:hover{
+    background-color: #272727;
 }
 
 .imagemMenu{
@@ -65,3 +100,13 @@ body {
     height: 500px;
     border-radius: 20px;
 }
+
+.rodape{
+    color: black;
+    background-color: #22d4fd;
+    padding: 24px;
+    text-align: center;
+    font-family: "Montserrat", serif;
+    font-size: 24px;
+}
+
