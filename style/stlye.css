@@ -33,7 +33,7 @@ body {
 
 .cabecalho-link{
     font-family: var(--font-paragrafos);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--cor-tercearia);
     text-decoration: none;
@@ -48,24 +48,23 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .menuTexto{
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    gap:40px;
-
-    
+    gap:40px;   
 }
 
 .menuTextoTitulo{
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--font-titulos);
 }
 
 .menuTextoParagrafo{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--font-paragrafos);
 }
 
@@ -80,7 +79,7 @@ body {
 .botaoSubtitulo{
     font-family:var(--font-titulos);
     font-weight: 400px;
-    font-size: 24px;
+    font-size: 1.5rem;
     
 }
 
@@ -89,10 +88,10 @@ body {
     justify-content: center;
     gap: 16px;
     border: 2px solid var(--cor-tercearia);
-    width: 378px;
+    width: 50%;
     text-align: center;
     border-radius: 8px;
-    font-size: 24px;
+    font-size: 1.5rem;
     padding: 21.5px 0;
     text-decoration: none;
     color:#f6f6f6;
@@ -105,8 +104,8 @@ body {
 }
 
 .imagemMenu{
-    width: 600px;
-    height: 500px;
+    width: 45%;
+    height: 60%;
     border-radius: 20px;
 }
 
@@ -116,6 +115,31 @@ body {
     padding: 24px;
     text-align: center;
     font-family: var(--font-paragrafos);
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
+@media (max-width: 1200px){
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .cabecalho-nav{
+        justify-content: center;
+    }
+    
+    .menu{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }    
+
+    .menuTexto{
+        width: auto;
+          
+    }
+
+    .imagemMenu{
+        width: 70%;
+    }
+   
+
+}
